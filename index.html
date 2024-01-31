@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coup Game</title>
+  <style>
+    #game-container {
+      text-align: center;
+      padding: 20px;
+    }
+    #player-info {
+      margin-bottom: 20px;
+    }
+    #action-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .action-button {
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="game-container">
+  <h1>Coup Game</h1>
+  <div id="player-info">
+    <p id="player-name">Your Name: </p>
+  </div>
+  <div id="action-buttons">
+    <button class="action-button" onclick="performAction('Income')">Income</button>
+    <button class="action-button" onclick="performAction('Foreign Aid')">Foreign Aid</button>
+    <button class="action-button" onclick="performAction('Coup', 'Player2')">Coup Player2</button>
+    <!-- Add buttons for other actions -->
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
