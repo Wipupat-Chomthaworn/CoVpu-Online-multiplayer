@@ -1,5 +1,5 @@
-# Coup-Online multiplayer
- Just coup but online
+# Covpu-Online multiplayer
+ Just covpu but online
 
 Create a new folder for your project.
 Create three files: server.js, index.html, and app.js.
